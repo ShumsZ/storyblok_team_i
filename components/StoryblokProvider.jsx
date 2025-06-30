@@ -3,6 +3,6 @@
 import { getStoryblokApi } from "@/lib/storyblok";
 
 export default function StoryblokProvider({ children }) {
-getStoryblokApi();
+    getStoryblokApi();
 return children;
 }
