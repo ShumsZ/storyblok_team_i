@@ -4,7 +4,7 @@ export default function Teaser({ blok }) {
 
 return (
 	<div className="teaser" data-cy="teaser" {...storyblokEditable(blok)}>
-		<h2>{blok.headline}</h2>
+		<h1>{blok.headline}</h1>
 	</div>
 );
 }
