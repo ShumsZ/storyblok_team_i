@@ -1,8 +1,8 @@
-import { StoryblokServerComponent } from '@storyblok/react/rsc'
+import { storyblokEditable, StoryblokServerComponent } from '@storyblok/react/rsc'
 
 export default function Grid({ blok }){
 return (
-	<div className="grid">
+	<div className="grid" {...storyblokEditable(blok)}>
 		{blok.columns.map((nestedBlok) => (
 			<StoryblokServerComponent blok={nestedBlok} key={nestedBlok._uid} />
 		))}

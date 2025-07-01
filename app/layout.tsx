@@ -25,11 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <StoryblokProvider>
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+          {children}
+        </body>
+      </html>
     </StoryblokProvider>
   );
 }

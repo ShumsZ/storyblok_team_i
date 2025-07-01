@@ -35,7 +35,7 @@ export default function HomePage() {
   return (
     <div className="page">
       {data && <StoryblokStory story={data.story} />}
-      
+
       {a11yResults && (
         <div
           style={{
@@ -77,4 +77,8 @@ export default function HomePage() {
       )}
     </div>
   );
+}
+export async function fetchData() {
+	const storyblokApi = getStoryblokApi();
+	return await storyblokApi.get(`cdn/stories/home`, { version: 'draft' });
 }
