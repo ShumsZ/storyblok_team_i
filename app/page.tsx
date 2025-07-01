@@ -22,7 +22,7 @@ export default function HomePage() {
     async function loadData() {
       const storyblokApi = getStoryblokApi();
       const { data } = await storyblokApi.get('cdn/stories/home', {
-        version: 'published',
+        version: 'draft',
       });
       setData(data);
     }
