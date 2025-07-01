@@ -8,7 +8,6 @@ export default async function Home() {
     <div className="page">
 			<StoryblokStory story={data.story} />
 		</div>
-    <h1>Hello World</h1>
     </>
 
 	);
