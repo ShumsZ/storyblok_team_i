@@ -1,4 +1,3 @@
-"use client";
 
 import { getStoryblokApi } from "@/lib/storyblok";
 
