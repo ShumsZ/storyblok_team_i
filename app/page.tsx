@@ -12,8 +12,6 @@ export default async function Home() {
     <div className="page">
 			<StoryblokStory story={data.story} />
 		</div>
-    <img src="/no_alt.jpg" />
-    <svg><circle cx="50" cy="50" r="30" /></svg>
     <AccessibilityChecker />
     </>
 
